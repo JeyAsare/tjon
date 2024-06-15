@@ -1,0 +1,35 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: calc(100vh - 164px);
+}
+
+.logo-font {
+    font-family: "Exo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+.bg-black {
+    background: #000 !important;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 80%;
+    }
+}
+
+@media (min-width: 992px){
+    .fixed-top-desktop-only{
+        position:fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+}
+  
