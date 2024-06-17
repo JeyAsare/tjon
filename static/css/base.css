@@ -4,17 +4,35 @@ html {
 
 body {
     height: calc(100vh - 164px);
+    background-color: peachpuff;
 }
 
 .logo-font {
-    font-family: "Exo 2", sans-serif;
+    font-family: "Archivo", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 900;
+    font-weight: 800;
     font-style: normal;
+    font-variation-settings: "wdth" 100;
   }
+
+.text-black {
+    color: #000 !important;
+}
 
 .bg-black {
     background: #000 !important;
+}
+.border-black {
+    border: 1px solid black !important;
+}
+
+#delivery-banner {
+    background-color: rgb(211, 125, 39) !important;
+}
+
+.hero-image {
+    background: no-repeat center center fixed;
+    
 }
 
 @media (min-width: 1200px) {
