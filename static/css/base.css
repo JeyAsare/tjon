@@ -122,6 +122,14 @@ body {
     z-index: -1;
 }
 
+.product-img {
+    border: 2px solid rgb(196, 162, 133) !important;
+}
+
+.text-brown {
+    color: rgb(196, 162, 133) !important;
+}
+
 footer {
     background: rgba(75, 46, 17, 0.6);
     padding: 30px;
