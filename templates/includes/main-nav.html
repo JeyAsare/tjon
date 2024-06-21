@@ -13,13 +13,12 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="nav-text font-weight-bold nav-link mr-5" href="#" id="skincare-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-text font-weight-bold nav-link mr-5" href="" id="skincare-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Skincare
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="skincare-link">
-                <a href="" class="dropdown-item">Baobab Seed Oil</a>
-                <a href="" class="dropdown-item">Body Butter</a>
-                <a href="" class="dropdown-item">All Skincare</a>
+                <a href="{% url 'products' %}?category=body_butter" class="dropdown-item">Body Butter</a>
+                <a href="{% url 'products' %}?category=body_butter" class="dropdown-item">All Skincare</a>
             </div>
         </li>
 
@@ -28,9 +27,10 @@
                 Haircare
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="haircare-link">
-                <a href="" class="dropdown-item">Hair Butter</a>
-                <a href="" class="dropdown-item">Herbal Shampoo</a>
-                <a href="" class="dropdown-item">All Haircare</a>
+                <a href="{% url 'products' %}?category=baobab_seed_oil" class="dropdown-item">Baobab Seed Oil</a>
+                <a href="{% url 'products' %}?category=hair_butter" class="dropdown-item">Hair Butter</a>
+                <a href="{% url 'products' %}?category=herbal_shampoo" class="dropdown-item">Herbal Shampoo</a>
+                <a href="{% url 'products' %}?category=baobab_seed_oil,hair_butter,herbal_shampoo" class="dropdown-item">All Haircare</a>
             </div>
         </li>
 
@@ -39,9 +39,7 @@
                 Extras
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="extras-link">
-                <a href="" class="dropdown-item">Cocounut</a>
-                <a href="" class="dropdown-item">Honey</a>
-                <a href="" class="dropdown-item">All extras</a>
+                <a href="{% url 'products' %}?category=extras" class="dropdown-item">All extras</a>
             </div>
         </li>
 
@@ -50,7 +48,7 @@
                 Bundles
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="bundles-link">
-                <a href="" class="dropdown-item">All Bundle Deals</a>
+                <a href="{% url 'products'%}?category=bundles" class="dropdown-item">All Bundle Deals</a>
             </div>
         </li>
     </ul>
