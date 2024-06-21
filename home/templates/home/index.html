@@ -13,42 +13,70 @@
     <div class="container h-100">
         <div class="row h-100">
             <div class="col-md-6 my-auto">
-                <h4 class="text-black">
-                    100% Natural Ingredients 
+                <div class="col my-4 text-center">
+                    <h4 id="slogan" class="py-3 text-center">
+                        <i class="fas fa-wand-magic-sparkles"></i> Naturally feeling at your best <i 
+                        class="fas fa-wand-magic-sparkles"></i></h4>
+                </div>
+                <div class="col my-4">
+                    <h4 id="home-rating" class="py-3 text-center">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i> Over 20,000+ Happy Customers</h4>
+                </div>
+                <h4 class="homepage-text">
+                    <i class="fas fa-square-check"></i> 100% Natural Ingredients 
                 </h4>
                 <hr>
-                <h4 class="text-black">
-                    Over 10 years experience in formulation 
+                <h4 class="homepage-text">
+                    <i class="fas fa-square-check"></i> Over 10 years experience in formulation 
                 </h4>
                 <hr>
-                <h4 class="text-black">
-                    Products for all skin and hair types
+                <h4 class="homepage-text">
+                    <i class="fas fa-square-check"></i> Products for all skin and hair types
                 </h4>
             </div>
             <div class="col-md-6 my-auto">
-                <i>Image goes here</i> 
+                <img class="home-pic rounded-circle w-75 h-75" src="{{ MEDIA_URL }}all_products.png" alt="">
             </div>
         </div>
-
-        <div class="row h-100">
-            <div class="col-12 text-center my-auto">
-                <i>Image goes here</i> 
+    </div>
+    <div class="container-fluid">
+        <div id="delivery-banner" class="row text-center my-2">
+            <div class="col text-white">
+                <h4 class="logo-font my-1">Summer Sale Now Live <strong>40%</strong> Off All Bundles</h4>
             </div>
         </div>
-
+    </div>
+        <div class="hero-image">
+            <div class="container-text">
+                <a class="shop-now-btn" href="{% url 'products' %}">Shop Now</a>
+            </div>
+        </div>
+    <div class="container">
         <div class="row">
-            <h2 class="col-12 text-center">Our Story</h2>
-            <div class="col-md-6 my-1">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Officiis perferendis minima dicta provident inventore similique beatae, 
-                    sint assumenda illum. Dolores consectetur reiciendis quod minima. 
-                    Vitae id numquam autem. Enim, accusamus.
+            <h3 class="col-12 text-center my-3">Our Story</h3>
+            <div class="col-md-6 my-1 text-center">
+                <p class="our-story">Hi, My name is Yahna and I am the founder and CEO of T'JON, an all-natural skin & hair care brand 
+                    which encourages confidence and self love towards your appearance and complexion. 
+                    We promote skin health because if you look good then you'll feel amazing. 
+                    This brand tailors all skin colors and hair
+                    types to make everyone feel welcome whether you are a loyal customer, 
+                    a returning customer or even a first time buyer.  
+                </p>
+                <br>
+                <p class="our-story">I have been formulating my own creams for my husband and 3 children for over 8 years. 
+                    It all started off with my daughter's skin reacting negatively to supermarket creams. It caused her to have a lot
+                    of blemishes around her face and arms. I made it my mission to figure out what was causing these reactions. I found out that 
+                    it was certain chemicals that shes was using from supermarket creams. That is what led me to exploring ways to create my own 
+                    natural formulas and ever since her skin has been healed an revitalised.
                 </p>
             </div>
             <div class="col-md-6 my-1">
-                <img class="" src="" alt="">
+                <img class="home-pic rounded-circle w-100 h-100" src="{{ MEDIA_URL }}hero_image.png" alt="">
             </div>
         </div>
-
     </div>
 {% endblock %}

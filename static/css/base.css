@@ -4,19 +4,56 @@ html {
 
 body {
     height: calc(100vh - 164px);
-    background-color: peachpuff;
+    background-color: white;
 }
 
-.logo-font {
+.logo-font, h4, h3 {
     font-family: "Archivo", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
-    font-style: normal;
+    font-style: italic;
     font-variation-settings: "wdth" 100;
+    color: rgb(196, 162, 133) !important;
   }
 
-.text-black {
-    color: #000 !important;
+#slogan, #home-rating {
+    border: 2px solid rgb(196, 162, 133);
+    background: peachpuff;
+    border-radius: 50px;
+    padding-bottom: 10px !important;
+    display: inline-block;
+    padding: 10px;
+}
+
+.homepage-text {
+    color: rgb(196, 162, 133) !important;
+}
+
+.home-pic{
+    border: 2px solid rgb(196, 162, 133) !important; 
+}
+
+.nav-text {
+    font-family: "Archivo", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 800 !important;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: rgb(196, 162, 133) !important;
+}
+
+.our-story{
+    font-family: "Archivo", sans-serif !important;
+    font-optical-sizing: auto;
+    font-variation-settings: "wdth" 100;
+    color: rgb(196, 162, 133);
+    font-weight: 500;
+    font-size: large;
+    font-style: italic; 
+}
+
+#story-pic {
+    border: 2px solid rgb(196, 162, 133) !important; 
 }
 
 .bg-black {
@@ -27,12 +64,52 @@ body {
 }
 
 #delivery-banner {
-    background-color: rgb(211, 125, 39) !important;
+    background-color: peachpuff !important;
+    height: 72px;
+    align-items: center;
+    letter-spacing: 0.2rem;
+    font-weight: 900 !important;
+    font-size: 80px;
 }
 
 .hero-image {
-    background: no-repeat center center fixed;
-    
+    position: relative;
+    height: 350px;
+    overflow: hidden;
+    background: linear-gradient(rgb(196, 162, 133, 0.2),rgb(196, 162, 133, 0.2)), url('/media/body_hair.png') no-repeat center;
+    background-size: cover;
+}
+
+.container-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.container-text a {
+    font-size: 23px;
+    letter-spacing: 0.2rem;
+}
+
+.shop-now-btn {
+    color:rgb(196, 162, 133);
+    padding: 10px 24px;
+    font-size: 20px;
+    background: peachpuff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s all;
+}
+
+.shop-now-btn:hover {
+    opacity: 0.8;
+    text-decoration: none;
+    color: white;
 }
 
 .overlay {
@@ -43,6 +120,20 @@ body {
     position: fixed;
     background: white;
     z-index: -1;
+}
+
+footer {
+    background: rgba(75, 46, 17, 0.6);
+    padding: 30px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.social-links a {
+    display: inline-block;
+    font-size: 24px;
+    letter-spacing: 1rem;
+    color: rgba(75, 46, 17, 0.6);
 }
 
 @media (min-width: 1200px) {
