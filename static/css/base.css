@@ -106,10 +106,20 @@ body {
     transition: 0.3s all;
 }
 
-.shop-now-btn:hover {
+.shop-now-btn:hover, .add-to-bag-btn:hover {
     opacity: 0.8;
     text-decoration: none;
     color: white;
+}
+
+.add-to-bag-btn {
+    color: peachpuff;
+    background: rgb(196, 162, 133);
+    padding: 10px 24px;
+    font-size: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s all;
 }
 
 .overlay {
