@@ -140,6 +140,11 @@ body {
     color: rgb(196, 162, 133) !important;
 }
 
+.update-link, 
+.remove-item {
+    cursor: pointer;
+}
+
 footer {
     background: rgba(75, 46, 17, 0.6);
     padding: 30px;
