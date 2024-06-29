@@ -1,13 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     height: 100%;
 }
 
 body {
-    height: calc(100vh - 164px);
-    background-color: white;
+    margin-top: 30px;
+    background-color: whitesmoke;
+}
+/* Header section */
+header{
+    height: 168px;
+    background-color: rgb(63, 34, 11);
 }
 
-.logo-font, h4, h3 {
+.tjon:hover {
+    text-decoration: none;
+
+}
+
+.logo-font, h4, h3,
+.text-brown {
     font-family: "Archivo", sans-serif;
     font-optical-sizing: auto;
     font-weight: 800;
@@ -15,6 +31,39 @@ body {
     font-variation-settings: "wdth" 100;
     color: rgb(196, 162, 133) !important;
   }
+  
+.fa-search {
+      color: rgb(196, 162, 133);
+  }
+
+
+.total-items {
+    color: whitesmoke !important;
+}
+
+.nav-text,
+.dropdown-menu > a {
+    font-family: "Archivo", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 800 !important;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: rgb(196, 162, 133) !important;
+}
+
+#delivery-banner {
+    background-color: peachpuff !important;
+    height: 72px;
+    align-items: center;
+    letter-spacing: 0.2rem;
+    font-weight: 900 !important;
+    font-size: 80px;
+}
+
+/* --- */
+
+
+/*-- Homepage --*/
 
 #slogan, #home-rating {
     border: 2px solid rgb(196, 162, 133);
@@ -33,15 +82,6 @@ body {
     border: 2px solid rgb(196, 162, 133) !important; 
 }
 
-.nav-text {
-    font-family: "Archivo", sans-serif !important;
-    font-optical-sizing: auto;
-    font-weight: 800 !important;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-    color: rgb(196, 162, 133) !important;
-}
-
 .our-story{
     font-family: "Archivo", sans-serif !important;
     font-optical-sizing: auto;
@@ -56,28 +96,18 @@ body {
     border: 2px solid rgb(196, 162, 133) !important; 
 }
 
-.bg-black {
-    background: #000 !important;
-}
-.border-black {
-    border: 1px solid black !important;
-}
-
-#delivery-banner {
-    background-color: peachpuff !important;
-    height: 72px;
-    align-items: center;
-    letter-spacing: 0.2rem;
-    font-weight: 900 !important;
-    font-size: 80px;
+.bundle-offer{
+    margin-bottom: 0;
 }
 
 .hero-image {
     position: relative;
     height: 350px;
     overflow: hidden;
-    background: linear-gradient(rgb(196, 162, 133, 0.2),rgb(196, 162, 133, 0.2)), url('/media/body_hair.png') no-repeat center;
+    background: url('/media/body_hair.png') no-repeat center;
     background-size: cover;
+    border: 2px solid rgb(196, 162, 133) !important;
+
 }
 
 .container-text {
@@ -91,58 +121,96 @@ body {
     text-transform: uppercase;
 }
 
+
 .container-text a {
     font-size: 23px;
     letter-spacing: 0.2rem;
 }
 
+/* -- */
+
+/*-- Buttons */
 .shop-now-btn {
     color:rgb(196, 162, 133);
     padding: 10px 24px;
-    font-size: 20px;
     background: peachpuff;
-    border-radius: 10px;
+    border-radius: 50px;
     overflow: hidden;
     transition: 0.3s all;
+    font-family: "Archivo", sans-serif !important;
+    font-optical-sizing: auto;
+    font-variation-settings: "wdth" 100;
+    color: rgb(196, 162, 133);
+    font-weight: 800;
+    border: 2px solid rgb(196, 162, 133);
 }
 
+.add-to-bag-btn {
+    padding: 10px 24px;
+    background: rgb(196, 162, 133);
+    border-radius: 50px;
+    overflow: hidden;
+    transition: 0.3s all;
+    font-family: "Archivo", sans-serif !important;
+    font-optical-sizing: auto;
+    font-variation-settings: "wdth" 100;
+    color: peachpuff;
+    font-weight: 800;
+    border: 2px solid peachpuff;
+    transition: 0.3s all;
+}
 .shop-now-btn:hover, .add-to-bag-btn:hover {
     opacity: 0.8;
     text-decoration: none;
     color: white;
 }
 
-.add-to-bag-btn {
-    color: peachpuff;
-    background: rgb(196, 162, 133);
-    padding: 10px 24px;
-    font-size: 20px;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: 0.3s all;
-}
 
+/* -- */
+
+/*
 .overlay {
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
     position: fixed;
-    background: white;
+    background: whitesmoke;
     z-index: -1;
 }
+*/
 
+/* -- Products Page -- */
 .product-img {
     border: 2px solid rgb(196, 162, 133) !important;
 }
 
+.fa-minus,
+.fa-plus,
+.fa-lock {
+    color: rgb(196, 162, 133);
+}
+
+/* -- */
+/*
 .text-brown {
     color: rgb(196, 162, 133) !important;
 }
+*/
+
+.border-brown {
+    border: 1px solid rgb(196, 162, 133) !important;
+}
+
+/* -- Bag Page */
 
 .update-link, 
-.remove-item {
+.remove-item,
+.update-link:hover, 
+.remove-item:hover {
     cursor: pointer;
+    text-decoration: none;
+    color: rgb(196, 162, 133) !important;
 }
 
 .message-container {
@@ -159,6 +227,8 @@ body {
 .toast-capper{
     height: 2px;
 }
+
+/* -- */
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
@@ -211,19 +281,26 @@ body {
     overflow-y: auto;
 }
 
+/*-- Footer Section --*/
+
 footer {
-    background: rgba(75, 46, 17, 0.6);
+    background-color: rgb(63, 34, 11);
     padding: 30px;
     align-items: center;
     margin-top: 30px;
+    width: 100%;
 }
 
 .social-links a {
     display: inline-block;
     font-size: 24px;
     letter-spacing: 1rem;
-    color: rgba(75, 46, 17, 0.6);
+    color:rgb(196, 162, 133);
 }
+
+/* -- */
+
+/* -- Media Queries --*/
 
 @media (min-width: 1200px) {
     .container {
@@ -254,4 +331,6 @@ footer {
         height: calc(100vh - 116px);
     }
 }
+
+/* -- */
   

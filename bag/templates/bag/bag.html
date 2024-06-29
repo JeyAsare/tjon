@@ -25,7 +25,7 @@
                 {% if bag_items %}
                     <div class="table-responsive rounded">
                         <table class="table table-sm table-borderless">
-                            <thead class="text-black">
+                            <thead class="text-brown">
                                 <tr>
                                     <th scope="col">Product Info</th>
                                     <th scope="col"></th>
@@ -35,13 +35,13 @@
                                 </tr>
                             </thead>
                             {% for item in bag_items %}
-                                <tr>
+                                <tr class="text-brown">
                                     <td class="p-3 w-25">
-                                        <img src="{{ item.product.image.url }}" alt="" class="img-fluid rounded">
+                                        <img src="{{ item.product.image.url }}" alt="" class="img-fluid rounded-circle product-img">
                                     </td>
                                     <td class="p-3">
                                         <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                                        <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
+                                        <p class="my-0 small text-muted text-brown">SKU: {{ item.product.sku|upper }}</p>
                                     </td>
                                     <td class="p-3">
                                         <p class="my-0">${{ item.product.price }}</p>
@@ -73,15 +73,15 @@
                                                 </div>
                                             </div>
                                         </form>
-                                        <a class="update-link text-info"><small>Update</small></a>
-                                        <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><small>Delete</small></a>
+                                        <a class="update-link"><small>Update</small></a>
+                                        <a class="remove-item float-right" id="remove_{{ item.item_id }}"><small>Delete</small></a>
                                     </td>
                                     <td class="p-3">
                                         <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
                                     </td>
                                 </tr>
                             {% endfor %}
-                            <tr>
+                            <tr class="text-brown">
                                 <td colspan="5" class="pt-5 text-right">
                                     <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
                                     <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
@@ -94,13 +94,13 @@
                             </tr>
                             <tr>
                                 <td colspan="5" class="text-right">
-                                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                                    <a href="{% url 'products' %}" class="btn shop-now-btn">
                                         <span class="icon">
                                             <i class="fas fa-chevron-left"></i>
                                         </span>
                                         <span class="text-uppercase">Keep Shopping</span>
                                     </a>
-                                    <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">
+                                    <a href="{% url 'checkout' %}" class="btn add-to-bag-btn">
                                         <span class="text-uppercase">Secure Checkout</span>
                                         <span class="icon">
                                             <i class="fas fa-lock"></i>
@@ -111,8 +111,8 @@
                         </table>
                     </div>
                 {% else %}
-                    <p class="lead mb-5">Your bag is empty</p>
-                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                    <p class="lead mb-5 text-brown">Your bag is empty</p>
+                    <a href="{% url 'products' %}" class="btn shop-now-btn">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
                         </span>
