@@ -130,7 +130,9 @@ header{
 /* -- */
 
 /*-- Buttons */
-.shop-now-btn {
+.shop-now-btn,
+.home-btn,
+.back-to-login-btn {
     color:rgb(196, 162, 133);
     padding: 10px 24px;
     background: peachpuff;
@@ -165,7 +167,6 @@ header{
     color: white;
 }
 
-
 /* -- */
 
 /*
@@ -192,15 +193,6 @@ header{
 }
 
 /* -- */
-/*
-.text-brown {
-    color: rgb(196, 162, 133) !important;
-}
-*/
-
-.border-brown {
-    border: 1px solid rgb(196, 162, 133) !important;
-}
 
 /* -- Bag Page */
 
@@ -300,7 +292,66 @@ footer {
 
 /* -- */
 
-/* -- Media Queries --*/
+/* -- Allauth Form Formatting --*/
+
+.allauth-form-inner-content p {
+    margin-top: 1.5rem;
+    color: rgb(196, 162, 133);
+}
+
+.allauth-form-inner-content input {
+    border-color: rgb(196, 162, 133);
+    border-radius: 50px;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display:none;
+}
+
+.allauth-form-inner-content input::placeholder {
+    color: rgb(196, 162, 133);
+}
+
+.allauth-form-inner-content button, 
+.allauth-form-inner-content input[type='submit'] {
+    padding: 10px 24px;
+    background: rgb(196, 162, 133);
+    border-radius: 50px;
+    overflow: hidden;
+    transition: 0.3s all;
+    font-family: "Archivo", sans-serif !important;
+    font-optical-sizing: auto;
+    font-variation-settings: "wdth" 100;
+    color: peachpuff;
+    font-weight: 800;
+    border: 2px solid peachpuff;
+    transition: 0.3s all;
+}
+
+.allauth-form-inner-content button:hover,
+.allauth-form-inner-content input[type='submit']:hover {
+    color: #fff;
+}
+
+.allauth-form-inner-content a {
+    color: rgb(63, 34, 11);
+}
+/* -- */
+
+
+/* -- Extra CSS -- */
+
+.border-brown {
+    border: 1px solid rgb(196, 162, 133) !important;
+}
+
+input[name='q']::placeholder {
+    color:rgb(196, 162, 133)
+}
+
+/* -- */
+
+/* -- Media Queries -- */
 
 @media (min-width: 1200px) {
     .container {
