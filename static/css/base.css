@@ -11,7 +11,63 @@ body {
     margin-top: 30px;
     background-color: whitesmoke;
 }
-/* Header section */
+
+/*-- Typography --*/
+
+.logo-font, h4, h3 {
+    font-family: "Archivo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: italic;
+    font-variation-settings: "wdth" 100;
+    color: rgb(196, 162, 133) !important;
+  }
+
+.nav-text,
+.dropdown-menu > a,
+.text-brown {
+    font-family: "Archivo", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 800 !important;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: rgb(196, 162, 133) !important;
+  }
+
+.text-brown-sm {
+  font-family: "Archivo", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 400 !important;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: rgb(196, 162, 133) !important;
+  }
+
+.dark-brown {
+  color: rgb(63, 34, 11);
+  font-family: "Archivo", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 800 !important;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  }
+p .dark-brown:hover {
+   text-decoration: underline;
+   color: rgb(63, 34, 11);
+}
+
+.our-story{
+  font-family: "Archivo", sans-serif !important;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+  color: rgb(196, 162, 133);
+  font-weight: 500;
+  font-size: large;
+  font-style: italic; 
+}
+
+/* -- */
+/*-- Header section --*/
 header{
     height: 168px;
     background-color: rgb(63, 34, 11);
@@ -21,16 +77,6 @@ header{
     text-decoration: none;
 
 }
-
-.logo-font, h4, h3,
-.text-brown {
-    font-family: "Archivo", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 800;
-    font-style: italic;
-    font-variation-settings: "wdth" 100;
-    color: rgb(196, 162, 133) !important;
-  }
   
 .fa-search {
       color: rgb(196, 162, 133);
@@ -39,16 +85,6 @@ header{
 
 .total-items {
     color: whitesmoke !important;
-}
-
-.nav-text,
-.dropdown-menu > a {
-    font-family: "Archivo", sans-serif !important;
-    font-optical-sizing: auto;
-    font-weight: 800 !important;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-    color: rgb(196, 162, 133) !important;
 }
 
 #delivery-banner {
@@ -80,16 +116,6 @@ header{
 
 .home-pic{
     border: 2px solid rgb(196, 162, 133) !important; 
-}
-
-.our-story{
-    font-family: "Archivo", sans-serif !important;
-    font-optical-sizing: auto;
-    font-variation-settings: "wdth" 100;
-    color: rgb(196, 162, 133);
-    font-weight: 500;
-    font-size: large;
-    font-style: italic; 
 }
 
 #story-pic {
@@ -346,7 +372,27 @@ footer {
 }
 
 input[name='q']::placeholder {
-    color:rgb(196, 162, 133)
+    font-family: "Archivo", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 500 !important;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: rgb(196, 162, 133) !important;
+
+}
+
+small > .edit-link {
+    color: rgb(212, 161, 115) !important;
+    font-family: "Archivo", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 700 !important;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    
+}
+
+small > .dark-brown:hover {
+    color: rgb(63, 34, 11);
 }
 
 /* -- */

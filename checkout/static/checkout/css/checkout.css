@@ -22,7 +22,7 @@
 }
 
 .stripe-style-input::placeholder {
-    color: #aab7c4;
+    color: rgb(196, 162, 133)
 }
 
 .fieldset-label {
@@ -43,7 +43,69 @@ select option {
 
 select:invalid,
 select option[value=""]{
-  color: #aab7c4 !important;
+  color: rgb(196, 162, 133) !important;
+}
+
+.text-brown {
+  font-family: "Archivo", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 800 !important;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: rgb(196, 162, 133) !important;
+}
+
+.text-brown-sm {
+  font-family: "Archivo", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 400 !important;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: rgb(196, 162, 133) !important;
+}
+
+label > .dark-brown:hover {
+  text-decoration: none;
+  color: rgb(63, 34, 11);
+}
+
+.dark-brown {
+  color: rgb(63, 34, 11);
+  font-family: "Archivo", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 400 !important;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.cancel-btn {
+  color:rgb(196, 162, 133);
+  padding: 10px 24px;
+  background: peachpuff;
+  border-radius: 50px;
+  overflow: hidden;
+  transition: 0.3s all;
+  font-family: "Archivo", sans-serif !important;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+  color: rgb(196, 162, 133);
+  font-weight: 800;
+  border: 2px solid rgb(196, 162, 133);
+}
+
+.secure-checkout-btn {
+  padding: 10px 24px;
+  background: rgb(196, 162, 133);
+  border-radius: 50px;
+  overflow: hidden;
+  transition: 0.3s all;
+  font-family: "Archivo", sans-serif !important;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
+  color: peachpuff;
+  font-weight: 800;
+  border: 2px solid peachpuff;
+  transition: 0.3s all;
 }
 
 #loading-overlay {
@@ -53,7 +115,7 @@ select option[value=""]{
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(23, 162, 184, .85);
+  background: peachpuff;
   z-index: 9999;
 }
 
@@ -63,4 +125,6 @@ select option[value=""]{
   justify-content: center;
   margin: 0;
   height: 100%;
+  color: whitesmoke;
 }
+
