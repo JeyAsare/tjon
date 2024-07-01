@@ -8,7 +8,7 @@ from .models import OrderLineItem, Order
 from products.models import Product
 from profiles.forms import UserProfileForm
 from profiles.models import UserProfile
-from bag.contexts import bag_contents
+from checkout.contexts import checkout_contents
 
 import stripe
 import json
@@ -84,8 +84,11 @@ def checkout(request):
             messages.error(request, 'There is nothing in your bag at the moment')
             return redirect(reverse('products'))
 
-        current_bag = bag_contents(request)
-        total = current_bag['grand_total']
+        current_bag = checkout_contents(request)
+        print(current_bag)
+        total = current_bag['total']
+        delivery_cost = current_bag['delivery_cost']
+        grand_total = current_bag['grand_total']
         stripe_total = round(total * 100)
         stripe.api_key = stripe_secret_key
         intent = stripe.PaymentIntent.create(
@@ -121,6 +124,9 @@ def checkout(request):
         'order_form': order_form,
         'stripe_public_key': stripe_public_key,
         'client_secret' : intent.client_secret,
+        'total': total,
+        'delivery_cost': delivery_cost,
+        'grand_total': grand_total,
     }
 
     return render(request, template, context)
