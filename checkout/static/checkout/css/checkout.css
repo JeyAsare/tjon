@@ -88,11 +88,11 @@ label > .dark-brown:hover {
   font-family: "Archivo", sans-serif !important;
   font-optical-sizing: auto;
   font-variation-settings: "wdth" 100;
-  color: rgb(196, 162, 133);
   font-weight: 800;
   border: 2px solid rgb(196, 162, 133);
 }
 
+.home-btn,
 .secure-checkout-btn {
   padding: 10px 24px;
   background: rgb(196, 162, 133);
@@ -106,6 +106,10 @@ label > .dark-brown:hover {
   font-weight: 800;
   border: 2px solid peachpuff;
   transition: 0.3s all;
+}
+
+.home-btn:hover{
+  color: peachpuff;
 }
 
 #loading-overlay {

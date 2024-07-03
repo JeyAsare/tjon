@@ -85,9 +85,9 @@ def checkout(request):
             return redirect(reverse('products'))
 
         current_bag = checkout_contents(request)
-        print(current_bag)
         total = current_bag['total']
         delivery_cost = current_bag['delivery_cost']
+        bundle_discount = current_bag['bundle_discount']
         grand_total = current_bag['grand_total']
         stripe_total = round(total * 100)
         stripe.api_key = stripe_secret_key
@@ -126,6 +126,7 @@ def checkout(request):
         'client_secret' : intent.client_secret,
         'total': total,
         'delivery_cost': delivery_cost,
+        'bundle_discount': bundle_discount,
         'grand_total': grand_total,
     }
 

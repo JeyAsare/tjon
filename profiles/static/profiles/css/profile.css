@@ -15,3 +15,8 @@
 #id_default_country option:first-child {
     color: rgb(196, 162, 133);
 }
+
+.profile-links,
+.profile-links:hover {
+    color:rgb(63, 34, 11);;
+}

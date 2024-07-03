@@ -16,7 +16,7 @@
         <div class="row">
             <div class="col">
                 <hr>
-                <h2 class="logo-font mb-4">Shopping Bag</h2>
+                <h2 class="logo-font mb-4 text-center">Shopping Bag</h2>
                 <hr>
             </div>
         </div>
@@ -35,23 +35,23 @@
                                 </tr>
                             </thead>
                             {% for item in bag_items %}
-                                <tr class="text-brown">
-                                    <td class="p-3 w-25">
+                                <tr class="text-brown-sm">
+                                    <td class="p-1 w-25">
                                         {% if item.product.image %}
                                         <img src="{{ item.product.image.url }}" alt="" class="img-fluid rounded-circle product-img">
                                         {% else %}
                                         <img src="{{ MEDIA_URL }}noimage.png" alt="" class="img-fluid rounded-circle product-img">
                                         {% endif %}
                                     </td>
-                                    <td class="p-3">
+                                    <td class="p-1">
                                         <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                                        <p class="my-0"> Size:{% if product.size %} {{ product.size }} {% endif %} </p>                           
+                                        <p class="my-0 text-uppercase">{% if item.size %}Size: {{ item.size }} ml {% endif %} </p>                           
                                         <p class="my-0 small text-muted text-brown">SKU: {{ item.product.sku|upper }}</p>
                                     </td>
-                                    <td class="p-3">
+                                    <td class="p-2">
                                         <p class="my-0">${{ item.product.price }}</p>
                                     </td>
-                                    <td class="p-3 w-25">
+                                    <td class="p-2 w-25">
                                         <form action="{% url 'adjust_bag' item.item_id %}" method="POST" class="form update-form">
                                             {% csrf_token %}
                                             <div class="form-group">
@@ -81,7 +81,7 @@
                                         <a class="update-link"><small>Update</small></a>
                                         <a class="remove-item float-right" id="remove_{{ item.item_id }}"><small>Delete</small></a>
                                     </td>
-                                    <td class="p-3">
+                                    <td class="p-2">
                                         <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
                                     </td>
                                 </tr>
@@ -99,7 +99,7 @@
                             </tr>
                             <tr>
                                 <td colspan="5" class="text-right">
-                                    <a href="{% url 'products' %}" class="btn shop-now-btn">
+                                    <a href="{% url 'products' %}" class="btn shop-now-btn my-1">
                                         <span class="icon">
                                             <i class="fas fa-chevron-left"></i>
                                         </span>

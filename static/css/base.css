@@ -172,7 +172,7 @@ header{
     font-weight: 800;
     border: 2px solid rgb(196, 162, 133);
 }
-
+.home-btn,
 .add-to-bag-btn {
     padding: 10px 24px;
     background: rgb(196, 162, 133);
@@ -187,6 +187,7 @@ header{
     border: 2px solid peachpuff;
     transition: 0.3s all;
 }
+
 .shop-now-btn:hover, .add-to-bag-btn:hover {
     opacity: 0.8;
     text-decoration: none;

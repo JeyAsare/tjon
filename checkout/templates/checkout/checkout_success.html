@@ -19,7 +19,7 @@
         <div class="row">
             <div class="col">
                 <hr>
-                <h2 class="logo-font mb-4">Thank You</h2>
+                <h2 class="logo-font mb-4 text-center">Thank You</h2>
                 <hr>
                 <p class="text-brown">Your order information is below. A confirmation email will be sent to <strong>{{ order.email }}</strong>.</p>
             </div>
@@ -56,7 +56,9 @@
                     {% for item in order.lineitems.all %}
                     <div class="row">
                         <div class="col-12 col-md-4">
-                            <p class="mb-0">{{ item.product.name }}</p>
+                                <p class="mb-0">{{ item.product.name }}</p>
+                                <span><p class="mb-0 text-uppercase text-muted text-brown-sm">{% if item.product.size %}Size {{ item.product.size }} ml {% endif %}</p>
+                            </span>
                         </div>
                         <div class="col-12 col-md-8 text-md-right">
                             <p class="mb-0">{{ item.quantity }} @ ${{ item.product.price }} each</p>
@@ -150,7 +152,7 @@
                             <p class="mb-0">Order Total</p>
                         </div>
                         <div class="col-12 col-md-8 text-md-right">
-                            <p class="mb-0">{{ order.order_total }}</p>
+                            <p class="mb-0">${{ order.order_total }}</p>
                         </div>
                     </div>
                     <div class="row">
@@ -158,15 +160,25 @@
                             <p class="mb-0">Delivery</p>
                         </div>
                         <div class="col-12 col-md-8 text-md-right">
-                            <p class="mb-0">{{ order.delivery_cost }}</p>
+                            <p class="mb-0">${{ order.delivery_cost }}</p>
                         </div>
                     </div>
+                    {% if not item.size %}
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <p class="mb-0">Bundle Discount</p>
+                        </div>
+                        <div class="col-12 col-md-8 text-md-right">
+                            <p class="mb-0">-${{ order.bundle_discount }}</p>
+                        </div>
+                    </div>
+                    {% endif %}
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="mb-0">Grand Total</p>
                         </div>
                         <div class="col-12 col-md-8 text-md-right">
-                            <p class="mb-0">{{ order.grand_total }}</p>
+                            <p class="mb-0">${{ order.grand_total }}</p>
                         </div>
                     </div>
                 </div>
@@ -182,11 +194,12 @@
                     <span class="text-uppercase">Back to Profile</span>
                 </a>
                 {% else %}
+                    <a href="{% url 'home' %}" class="home-btn">Home</a>
                     <a href="{% url 'products' %}" class="btn shop-now-btn my-2">
                         <span class="icon mr-2">
                             <i class="fas fa-gifts"></i>
                         </span>
-                        <span class="text-uppercase">Browse our products page to have a look at more items.</span>
+                        <span class="text-uppercase">Browse our store</span>
                     </a>
                 {% endif %}
             </div>

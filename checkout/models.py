@@ -25,6 +25,7 @@ class Order(models.Model):
     county = models.CharField(max_length=32, null=True, blank=True)
     date = models.DateTimeField(auto_now_add=True)
     delivery_cost = models.DecimalField(max_digits=6, decimal_places=2, null=False, default=0)
+    bundle_discount = models.DecimalField(max_digits=6, decimal_places=2, null=False, default=0)
     order_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
     grand_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
     original_bag = models.TextField(null=False, blank=False, default='')
@@ -46,8 +47,15 @@ class Order(models.Model):
         if self.order_total < settings.FREE_DELIVERY_THRESHOLD:
             self.delivery_cost = Decimal(settings.DELIVERY_FOR_ORDER)
         else:
-            delivery_cost = Decimal(0.00)
-        self.grand_total = self.order_total + self.delivery_cost
+            self.delivery_cost = Decimal(0.00)
+
+        # Calculate bundle discount for products without a size
+        self.bundle_discount = sum(
+            (item.lineitem_total * Decimal(settings.BUNDLE_DISCOUNT_PERCENTAGE / 100))
+            for item in self.lineitems.all() if not item.product.size
+        )
+
+        self.grand_total = self.order_total - self.bundle_discount + self.delivery_cost
         self.save()
 
     def save(self, *args, **kwargs):
