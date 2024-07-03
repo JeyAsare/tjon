@@ -1,3 +1,4 @@
+from pathlib import Path
 import os
 import dj_database_url
 
@@ -15,8 +16,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
-from pathlib import Path
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -28,9 +27,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = True
 
-ALLOWED_HOSTS = ['tjon-jeremy-2d2edeca8cbc.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['tjon-jeremy-2d2edeca8cbc.herokuapp.com', '8000-jeyasare-tjon-n4gs5kgd2ct.ws.codeinstitute-ide.net']
 
 
 # Application definition
@@ -182,7 +181,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 if 'USE_AWS' in os.environ:
-    
+
     #Cache Control
     AWS_S3_OBJECT_PARAMETERS = {
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
