@@ -27,11 +27,11 @@
                         <table class="table table-sm table-borderless">
                             <thead class="text-brown">
                                 <tr>
-                                    <th scope="col">Product Info</th>
-                                    <th scope="col"></th>
-                                    <th scope="col">Price</th>
-                                    <th scope="col">Quantity</th>
-                                    <th scope="col">Subtotal</th>
+                                    <th class="bag-headers" scope="col">Product Info</th>
+                                    <th class="bag-headers" scope="col"></th>
+                                    <th class="bag-headers" scope="col">Price</th>
+                                    <th class="bag-headers" scope="col">Quantity</th>
+                                    <th class="bag-headers" scope="col">Subtotal</th>
                                 </tr>
                             </thead>
                             {% for item in bag_items %}
@@ -46,7 +46,7 @@
                                     <td class="p-1">
                                         <p class="my-0"><strong>{{ item.product.name }}</strong></p>
                                         <p class="my-0 text-uppercase">{% if item.size %}Size: {{ item.size }} ml {% endif %} </p>                           
-                                        <p class="my-0 small text-muted text-brown">SKU: {{ item.product.sku|upper }}</p>
+                                        <p class="my-0 text-brown-sm">SKU: {{ item.product.sku|upper }}</p>
                                     </td>
                                     <td class="p-2">
                                         <p class="my-0">${{ item.product.price }}</p>
