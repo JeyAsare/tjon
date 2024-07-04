@@ -48,7 +48,6 @@ select option[value=""]{
 
 .text-brown {
   font-family: "Archivo", sans-serif !important;
-  font-optical-sizing: auto;
   font-weight: 800 !important;
   font-style: normal;
   font-variation-settings: "wdth" 100;
@@ -57,7 +56,6 @@ select option[value=""]{
 
 .text-brown-sm {
   font-family: "Archivo", sans-serif !important;
-  font-optical-sizing: auto;
   font-weight: 400 !important;
   font-style: normal;
   font-variation-settings: "wdth" 100;
@@ -72,7 +70,6 @@ label > .dark-brown:hover {
 .dark-brown {
   color: rgb(63, 34, 11);
   font-family: "Archivo", sans-serif !important;
-  font-optical-sizing: auto;
   font-weight: 400 !important;
   font-style: normal;
   font-variation-settings: "wdth" 100;
@@ -86,7 +83,6 @@ label > .dark-brown:hover {
   overflow: hidden;
   transition: 0.3s all;
   font-family: "Archivo", sans-serif !important;
-  font-optical-sizing: auto;
   font-variation-settings: "wdth" 100;
   font-weight: 800;
   border: 2px solid rgb(196, 162, 133);
@@ -100,7 +96,6 @@ label > .dark-brown:hover {
   overflow: hidden;
   transition: 0.3s all;
   font-family: "Archivo", sans-serif !important;
-  font-optical-sizing: auto;
   font-variation-settings: "wdth" 100;
   color: peachpuff;
   font-weight: 800;

@@ -3,6 +3,7 @@ from django.conf import settings
 from django.shortcuts import get_object_or_404
 from products.models import Product
 
+
 def checkout_contents(request):
     bag_items = []
     total = Decimal(0)
@@ -26,8 +27,11 @@ def checkout_contents(request):
         product_count += quantity
         total += quantity * product.price
 
-        if not product.size:  # Apply discount only if product does not have a size
-            bundle_discount += quantity * (product.price * Decimal(settings.BUNDLE_DISCOUNT_PERCENTAGE / 100))
+        if not product.size:
+            # Apply discount only if product does not have a size
+            bundle_discount += quantity * (
+                    product.price * Decimal(
+                        settings.BUNDLE_DISCOUNT_PERCENTAGE / 100))
 
         bag_items.append({
             'item_id': item_id,
@@ -46,7 +50,6 @@ def checkout_contents(request):
     if grand_total < 0:
         grand_total = 0  # Ensure grand_total is never negative
 
-
     context = {
         'bag_items': bag_items,
         'total': total,
@@ -59,3 +62,4 @@ def checkout_contents(request):
     }
 
     return context
+    

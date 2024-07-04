@@ -16,7 +16,6 @@ body {
 
 .logo-font, h4, h3 {
     font-family: "Archivo", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 800;
     font-style: italic;
     font-variation-settings: "wdth" 100;
@@ -27,7 +26,6 @@ body {
 .dropdown-menu > a,
 .text-brown {
     font-family: "Archivo", sans-serif !important;
-    font-optical-sizing: auto;
     font-weight: 800 !important;
     font-style: normal;
     font-variation-settings: "wdth" 100;
@@ -36,7 +34,6 @@ body {
 
 .text-brown-sm {
   font-family: "Archivo", sans-serif !important;
-  font-optical-sizing: auto;
   font-weight: 400 !important;
   font-style: normal;
   font-variation-settings: "wdth" 100;
@@ -46,7 +43,6 @@ body {
 .dark-brown {
   color: rgb(63, 34, 11);
   font-family: "Archivo", sans-serif !important;
-  font-optical-sizing: auto;
   font-weight: 800 !important;
   font-style: normal;
   font-variation-settings: "wdth" 100;
@@ -58,7 +54,6 @@ p .dark-brown:hover {
 
 .our-story{
   font-family: "Archivo", sans-serif !important;
-  font-optical-sizing: auto;
   font-variation-settings: "wdth" 100;
   color: rgb(196, 162, 133);
   font-weight: 500;
@@ -172,7 +167,6 @@ header{
     overflow: hidden;
     transition: 0.3s all;
     font-family: "Archivo", sans-serif !important;
-    font-optical-sizing: auto;
     font-variation-settings: "wdth" 100;
     font-weight: 800;
     border: 2px solid rgb(196, 162, 133);
@@ -185,7 +179,6 @@ header{
     overflow: hidden;
     transition: 0.3s all;
     font-family: "Archivo", sans-serif !important;
-    font-optical-sizing: auto;
     font-variation-settings: "wdth" 100;
     color: peachpuff;
     font-weight: 800;
@@ -313,7 +306,6 @@ footer {
     align-items: center;
     margin-top: 30px;
     width: 100%;
-    position: flex;
     
 }
 
@@ -354,7 +346,6 @@ footer {
     overflow: hidden;
     transition: 0.3s all;
     font-family: "Archivo", sans-serif !important;
-    font-optical-sizing: auto;
     font-variation-settings: "wdth" 100;
     color: peachpuff;
     font-weight: 800;
@@ -385,7 +376,6 @@ footer {
 
 input[name='q']::placeholder {
     font-family: "Archivo", sans-serif !important;
-    font-optical-sizing: auto;
     font-weight: 500 !important;
     font-style: normal;
     font-variation-settings: "wdth" 100;
@@ -396,7 +386,6 @@ input[name='q']::placeholder {
 small > .edit-link {
     color: rgb(212, 161, 115) !important;
     font-family: "Archivo", sans-serif !important;
-    font-optical-sizing: auto;
     font-weight: 700 !important;
     font-style: normal;
     font-variation-settings: "wdth" 100;
