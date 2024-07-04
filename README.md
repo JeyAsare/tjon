@@ -1,114 +1,443 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# TJON 
+## Online Store Milestone 4 Project
 
-Welcome Jeremy  Amoako,
+(By | Jeremy Amoako)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+[Click to View Site](https://tjon-jeremy-2d2edeca8cbc.herokuapp.com/)
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 28, 2024**
+## Introduction 
 
-## Gitpod Reminders
+I have been tasked to build a full-stack site based around business logic used to control a centrally-owned dataset. 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+For my Milestone 4 Project I have created and developed a full stack e-commerce site using HTML, CSS, Javascript and Python with Django. Each language I have used has contributed to my TJON site.
 
-`python3 -m http.server`
+TJON is an e-commerce site which sells Natural Skin and Haircare products. The inspiration behind this idea came from my Mother who does exactly that. Hopefully the concepts and values I have learnt from my project can help me in making and actual site for her in the future.
 
-A blue button should appear to click: _Make Public_,
+## Background Research 
 
-Another blue button should appear to click: _Open Browser_.
+A lot of design in regards to colours and layout came from Ava Estell which is another Skin and Hair care business.
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+- [Ava Estell](https://uk.avaestell.com/)
 
-A blue button should appear to click: _Make Public_,
+## User Stories 
 
-Another blue button should appear to click: _Open Browser_.
+| As a..  | I want to be able to... | So that I can... |
+|---------|-------------------------|------------------|
+| First time User  | Immediately understand the purpose of this website | To see if I am going to have any interest in this site |
+| First time User  | Easily navigate through the website  | Find out in as little time as possible whether I am going to need any goods or services from this site |
+| Shopper   | View a list of products with their price  | See which products I can afford and further click on to see more information about the product |
+| Shopper   | Have a more detailed view of a product. | Identify the products price, description, rating, reviews, size and quantity  |
+| Shopper   | Have a shopping bag which tells me how much I am spending | To be aware of my purchases and to see if I am on or have gone over budget. |
+| Shopper   | Filter and sort what products I actually want | To narrow down a big selection to help me make a decision on what I want |
+| Shopper   | Search for key words or ingredients | To select specific products with the ingredients that I want |
+| Shopper   | Have a selection of sizes for my product and quantity  | To exactly tailor what I need from the site |
+| Shopper   | Update and remove items from my shopping bag | Reach a decision faster on what I need and instead of going back to a products page to refill an order. |
+| Shopper   | View any discounts or promo codes  | Ensure that I get the best value as a customer on the website |
+| Shopper  | See how much I need to spend to get free shipping. | Ensure that I get the best value as a customer on the website |
+| Shopper  | Make a secure payment online | Buy the selected products from the store |
+| Shopper  | Get a confirmation of my order | Have a receipt to check over my purchases in the rare case of a mistake |
+| Shopper   | Have access to customer service or staff | Incase I run into of any difficulties |
+| Returning User  | Be able to login and sign up | To have my details and purchases saved onto the website |
+| Returning User  | Be able to logout | Don't have my profile details sitting around on the website |
+| Returning User  | See my past activity | View and check previous purchases incase i would like to purchase the same products again|
+| Returning User  | Ensure my email is verified by the site | Be confident that the site I am using is secure and nobody can access my details |
+| Shopper/ Returning User  | Save my billing details  | Shop quicker and more effectively on my next purchase |
+| Shopper/ Returning User  | Save my shipping information | Shop quicker and more effectively on my next purchase |
+| Shopper/ Returning User  | Be able to checkout without registering for an account | Purchase with the website without them holding onto my personal information. |
+| Store Owner / Staff Member   | Add a product onto the site | Interest new or returing customers with new products |
+| Store Owner / Staff Member   | Edit and Update a product | Change different details about certain products  |
+| Store Owner / Staff Member   | Delete a product | Get rid of any products that I feel do not need to be on the website anymore |
+| Store Owner / Staff Member   | Manage Stock Levels  | Keep track of available inventory |
+| Store Owner / Staff Member   | Update any discount codes or promo codes | Entice customers demand on particular products. |
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Wireframes
 
-To log into the Heroku toolbelt CLI:
+- All my wireframes were created on [Balsamiq](https://balsamiq.com/)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+<details><summary>Index Page</summary>
+<img src="documents/readme/wireframes/index.png">
+</details>
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+<details><summary>Products Page</summary>
+<img src="documents/readme/wireframes/products.png">
+</details>
 
-------
+<details><summary>Product Detail Page</summary>
+<img src="documents/readme/wireframes/product-detail.png">
+</details>
 
-## Release History
+<details><summary>Bag Page</summary>
+<img src="documents/readme/wireframes/bag.png">
+</details>
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+<details><summary>Checkout Page</summary>
+<img src="documents/readme/wireframes/checkout.png">
+</details>
 
-**May 28 2024:** Fix Mongo and Links installs
+<details><summary>Checkout Success Page</summary>
+<img src="documents/readme/wireframes/checkout.success.png">
+</details>
 
-**April 26 2024:** Update node version to 16
+## Website Design 
 
-**September 20 2023:** Update Python version to 3.9.17.
+### Typography 
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+I used Archivo as the main font throughout the website as I liked the simplicity of the font. 
+I played around with the font weight and applied more weight to the more important features of the site for example:
+- Logo
+- Header Section
+- Navbar Section
+- Buttons
+These features were put at a font-weight of 800
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+Whereas:
+- Paragraph Text
+- Product Information 
+These features were put at a font-weight of 400-500
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### Colour Scheme
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+Because of the sight I was making, I chose to go with a mixture of shades of brown. I wanted the brown to give of a natural atmosphere since the site I was making was selling natural products. I used a white background to give a good contrast between my words.
+- rgb(196, 162, 133)
+- rgb(63, 34, 11)
+- peachpuff
+- whitesmoke
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+## Technologies Used
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Languages
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+- Python was used for backend development
+- Javescript was used for front end interaction
+- HTML was used for the main frontend aspect of the site
+- CSS was ised for the frontend design and layout of the site
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Frameworks
+- Django - Templating language
+- jQuery - Simplied Javascript
+- Stripe - Payment System
+- Bootstrap - Styling and Responsiveness
+- Django-AllAuth - User Authentication
+- Font Awesome - Icons
+- Cripy Forms - Styling Form Inputs
+- AWS - Host static and media files
+- Boto3 - Connect workspace to AWS S3 Bucket
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+## Deployment
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### ElephantSQL Database
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+This project uses [ElephantSQL](https://www.elephantsql.com) for the PostgreSQL Database
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+To get your Postgre Database, sign-up with Github and follow these steps:
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+1. Click Create New Instance to start a new database
+2. Provide a name (this is usually the name of your project)
+3. Select the Tiny Turtle (Free) plan
+4. Leave the Tags section blank
+5. Select the Region closest to you
+6. Once created, click on the new database name, where you can view the database URL and password
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Stripe API
 
-------
+This project uses [Stripe](https://stripe.com) to handle the ecommerce payments.
 
-## FAQ about the uptime script
+Once you've created a Stripe account and logged-in, follow these series of steps to get your project connected.
 
-**Why have you added this script?**
+- From your Stripe dashboard, click to expand the "Get your test API keys".
+- You'll have two keys here:
+	- `STRIPE_PUBLIC_KEY` = Publishable Key (starts with **pk**)
+	- `STRIPE_SECRET_KEY` = Secret Key (starts with **sk**)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+As a backup, in case users prematurely close the purchase-order page during payment, we can include Stripe Webhooks.
 
-**How will this affect me?**
+- From your Stripe dashboard, click **Developers**, and select **Webhooks**.
+- From there, click **Add Endpoint**.
+	- `https://tjon-jeremy-2d2edeca8cbc.herokuapp.com/checkout/wh/`
+- Click **receive all events**.
+- Click **Add Endpoint** to complete the process.
+- You'll have a new key here:
+	- `STRIPE_WH_SECRET` = Signing Secret (Wehbook) Key (starts with **wh**)
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Amazon AWS
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+This project uses [AWS](https://aws.amazon.com) to store media and static files online, due to the fact that Heroku doesn't persist this type of data.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+Once you've created an AWS account and logged-in, follow these series of steps to get your project connected.
+Make sure you're on the **AWS Management Console** page.
 
-**So….?**
+#### S3 Bucket
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+- Search for **S3**.
+- Create a new bucket, give it a name (matching your Heroku app name), and choose the region closest to you.
+- Uncheck **Block all public access**, and acknowledge that the bucket will be public (required for it to work on Heroku).
+- From **Object Ownership**, make sure to have **ACLs enabled**, and **Bucket owner preferred** selected.
+- From the **Properties** tab, turn on static website hosting, and type `index.html` and `error.html` in their respective fields, then click **Save**.
+- From the **Permissions** tab, paste in the following CORS configuration:
+```shell
+	[
+		{
+			"AllowedHeaders": [
+				"Authorization"
+			],
+			"AllowedMethods": [
+				"GET"
+			],
+			"AllowedOrigins": [
+				"*"
+			],
+			"ExposeHeaders": []
+		}
+	]
+	```
 
-**Can I opt out?**
+- Copy your **ARN** string.
+- From the **Bucket Policy** tab, select the **Policy Generator** link, and use the following steps:
+	- Policy Type: **S3 Bucket Policy**
+	- Effect: **Allow**
+	- Principal: `*`
+	- Actions: **GetObject**
+	- Amazon Resource Name (ARN): **paste-your-ARN-here**
+	- Click **Add Statement**
+	- Click **Generate Policy**
+	- Copy the entire Policy, and paste it into the **Bucket Policy Editor**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+		```shell
+		{
+			"Id": "Policy1234567890",
+			"Version": "2012-10-17",
+			"Statement": [
+				{
+					"Sid": "Stmt1234567890",
+					"Action": [
+						"s3:GetObject"
+					],
+					"Effect": "Allow",
+					"Resource": "arn:aws:s3:::your-bucket-name/*"
+					"Principal": "*",
+				}
+			]
+		}
+		```
+- Before you click "Save", add `/*` to the end of the Resource key in the Bucket Policy Editor (like above).
+- Click **Save**.
+- From the **Access Control List (ACL)** section, click "Edit" and enable **List** for **Everyone (public access)**, and accept the warning box.
+- If the edit button is disabled, you need to change the **Object Ownership** section above to **ACLs enabled** (mentioned above).
 
+#### IAM
+
+Back on the AWS Services Menu, search for and open **IAM** (Identity and Access Management).
+Once on the IAM page, follow these steps:
+
+- From **User Groups**, click **Create New Group**.
+	- Suggested Name: `group-little-riders-academy` (group + the project name)
+- Tags are optional, but you must click it to get to the **review policy** page.
+- From **User Groups**, select your newly created group, and go to the **Permissions** tab.
+- Open the **Add Permissions** dropdown, and click **Attach Policies**.
+- Select the policy, then click **Add Permissions** at the bottom when finished.
+- From the **JSON** tab, select the **Import Managed Policy** link.
+	- Search for **S3**, select the `AmazonS3FullAccess` policy, and then **Import**.
+	- You'll need your ARN from the S3 Bucket copied again, which is pasted into "Resources" key on the Policy.
+
+		```shell
+		{
+			"Version": "2012-10-17",
+			"Statement": [
+				{
+					"Effect": "Allow",
+					"Action": "s3:*",
+					"Resource": [
+						"arn:aws:s3:::your-bucket-name",
+						"arn:aws:s3:::your-bucket-name/*"
+					]
+				}
+			]
+		}
+		```
+- Click **Review Policy**.
+- Suggested Name: `policy-tjon-jeremy` (policy + the project name)
+- Provide a description:
+- "Access to S3 Bucket for tjon-jeremy static files."
+	- Click **Create Policy**.
+- From **User Groups**, click your "group-tjon-jeremy".
+- Click **Attach Policy**.
+- Search for the policy you've just created ("policy-tjon-jeremy") and select it, then **Attach Policy**.
+- From **User Groups**, click **Add User**.
+	- Suggested Name: `user-tjon-jeremy` (user + the project name)
+- For "Select AWS Access Type", select **Programmatic Access**.
+- Select the group to add your new user to: `group-tjon-jeremy`
+- Tags are optional, but you must click it to get to the **review user** page.
+- Click **Create User** once done.
+- You should see a button to **Download .csv**, so click it to save a copy on your system.
+	- **IMPORTANT**: once you pass this page, you cannot come back to download it again, so do it immediately!
+	- This contains the user's **Access key ID** and **Secret access key**.
+	- `AWS_ACCESS_KEY_ID` = **Access key ID**
+	- `AWS_SECRET_ACCESS_KEY` = **Secret access key**
+
+#### Final AWS Setup
+
+- If Heroku Config Vars has `DISABLE_COLLECTSTATIC` still, this can be removed now, so that AWS will handle the static files.
+- Back within **S3**, create a new folder called: `media`.
+- Select any existing media images for your project to prepare them for being uploaded into the new folder.
+- Under **Manage Public Permissions**, select **Grant public read access to this object(s)**.
+- No further settings are required, so click **Upload**.
+
+### Gmail API
+
+This project uses [Gmail](https://mail.google.com) to handle sending emails to users for account verification and purchase order confirmations.
+
+Once you've created a Gmail (Google) account and logged-in, follow these series of steps to get your project connected.
+
+- Click on the **Account Settings** (cog icon) in the top-right corner of Gmail.
+- Click on the **Accounts and Import** tab.
+- Within the section called "Change account settings", click on the link for **Other Google Account settings**.
+- From this new page, select **Security** on the left.
+- Select **2-Step Verification** to turn it on. (verify your password and account)
+- Once verified, select **Turn On** for 2FA.
+- Navigate back to the **Security** page, and you'll see a new option called **App passwords**.
+- This might prompt you once again to confirm your password and account.
+- Select **Mail** for the app type.
+- Select **Other (Custom name)** for the device type.
+	- Any custom name, such as "Django" or little-riders-academy
+- You'll be provided with a 16-character password (API key).
+	- Save this somewhere locally, as you cannot access this key again later!
+	- `EMAIL_HOST_PASS` = user's 16-character API key
+	- `EMAIL_HOST_USER` = user's own personal Gmail email address
+
+### Gmail API
+
+This project uses [Gmail](https://mail.google.com) to handle sending emails to users for account verification and purchase order confirmations.
+
+Once you've created a Gmail (Google) account and logged-in, follow these series of steps to get your project connected.
+
+- Click on the **Account Settings** (cog icon) in the top-right corner of Gmail.
+- Click on the **Accounts and Import** tab.
+- Within the section called "Change account settings", click on the link for **Other Google Account settings**.
+- From this new page, select **Security** on the left.
+- Select **2-Step Verification** to turn it on. (verify your password and account)
+- Once verified, select **Turn On** for 2FA.
+- Navigate back to the **Security** page, and you'll see a new option called **App passwords**.
+- This might prompt you once again to confirm your password and account.
+- Select **Mail** for the app type.
+- Select **Other (Custom name)** for the device type.
+	- Any custom name, such as "Django" or little-riders-academy
+- You'll be provided with a 16-character password (API key).
+	- Save this somewhere locally, as you cannot access this key again later!
+	- `EMAIL_HOST_PASS` = user's 16-character API key
+	- `EMAIL_HOST_USER` = user's own personal Gmail email address
+
+### Deploying to Heroku
+
+- Select **New** in the top right corner of your Heroku Dashboard, and select **Create New App** from the dropdown menu.
+- Your app must be unique, and then choose a region closest to you (EU or USA), finally, select **Create App*.
+- From the new app **Settings**, click the **Reveal Config Vars**, and set your enviroment variables.
+
+| Key | Value |
+| --- | --- |
+| `AWS_ACCESS_KEY_ID` | user's own value |
+| `AWS_SECRET_ACCESS_KEY` | user's own value |
+| `SECRET_KEY` | user's own value |
+| `DATABASE_URL` | user's own value |
+| `EMAIL_HOST_PASS` | user's own value |
+| `EMAIL_HOST_USER` | user's own value |
+| `STRIPE_PUBLIC_KEY` | user's own value |
+| `STRIPE_SECRET_KEY` | user's own value |
+| `STRIPE_WH_SECRET` | user's own value |
+| `USE_AWS` | True |
+
+Heroku now needs two files to allow the user to deploy their project:
+
+- requirements.txt
+- Procfile
+
+You can install this project's **requirements** (where applicable) using:
+- `pip3 install -r requirements.txt`
+
+If you have your own packages that have been installed, then the requirements file needs to be updated using:
+- `pip3 freeze --local > requirements.txt`
+
+The Procfile can be created with the follwoing command:
+- `web: gunicorn tjon.wsgi:application` (make sure you use a capital P and also make sure that you use the name of your actual Flask app name, the one at the root-level.)
+
+For Heroku deployment, follow these steps to connect your own GitHub repository to the nearly created app:
+
+Either:
+- Select **Automatic Deployment** from the Heroku app.
+
+Or:
+
+- In the Terminal/CLI, connect to Heroku using this command `heroku login -i`
+- Set the remote for Heroku: `heroku git:remote -a app_name` (replace **app_name** with your app name)
+- After performing the standard Git `add`, `commit`, and `push` to Github, you can now type:
+- `git push heroku main`
+
+The project is now connected and deployed to Heroku.
+
+### Local Development
+
+- Create an env.py file and make sure that you list it in your .gitignore file to make sure that any variable listed in your env.py file does not get pushed to Github.
+
+```python
+import os 
+
+os.environ['STRIPE_PUBLIC_KEY'] = "user's own value"
+os.environ['STRIPE_SECRET_KEY'] = "user's own value"
+os.environ['STRIPE_WH_SECRET'] = "user's own value"
+os.environ['SECRET_KEY'] = "user's own value"
+os.environ['EMAIL_HOST_PASS'] = "user's own value"
+os.environ['EMAIL_HOST_USER'] = "user's own value"
+os.environ['AWS_ACCESS_KEY_ID'] = "user's own value"
+os.environ['AWS_SECRET_ACCESS_KEY'] = "user's own value"
+os.environ['DATABASE_URL'] = "user's own value"
+
+# local environment only (do not include these in production/deployment!)
+os.environ.setdefault("DEBUG", "True")
 ```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+Once the project is cloned or forked, in order to run it locally, you'll need to follow these steps:
 
-**Anything more?**
+- Start the Django app: `python3 manage.py runserver`
+- Stop the app once it's loaded: `CTRL+C` or `⌘+C` (Mac)
+- Make any necessary migrations: `python3 manage.py makemigrations`
+- Migrate the data to the database: `python3 manage.py migrate`
+- Create a superuser: `python3 manage.py createsuperuser`
+- Load fixtures (if applicable): `python3 manage.py loaddata file-name.json` (repeat for each file)
+- Everything should be ready now, so run the Django app again: `python3 manage.py runserver`
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+If you'd like to backup your database models, use the following command for each model you'd like to create a fixture for:
 
----
+- `python3 manage.py dumpdata your-model > your-model.json`
+- *repeat this action for each model you wish to backup*
 
-Happy coding!
+### Forking the Github Repository
+
+1. Open the Github Repository
+2. Click the fork button found in the top right corner
+
+### Cloning
+
+1. Open the Github Repository
+2. Choose to clone using either HTTPS, SSH, or Github CLI and click the copy button to copy the link address
+3. In a code editor, change the current working directory to the location desired for the cloned directory
+4. Type 'git clone' into the terminal and paste the link address copied earlier
+5. Press enter to clone
+
+
+## Credits 
+
+- On creation of my project I used the walkthrough project Boutique Ado by [Code Institute](https://learn.codeinstitute.net) as a guidline to help and assist me. Features of the walkthrough project code were taken out or altered to fit the functionality of my project.
+- The product descriptions for my products were generated using AI - [ChatGPT(https://chat.openai.com)]
+
+### Media
+
+- All images that were used on the site were created by myself
+- The photos taken of the products were taken by my close friend Yannick Ande
+
+### Acknowledgements
+
+- I would like to thank Code Insitute for giving me the opportunity to take on this course
+- I would like to thank the tutor support and care for helping me throughout this whole course
+- I would like to thank my friends Ore, Kai, Charles for morale support during this course
+
+
+ 
+
