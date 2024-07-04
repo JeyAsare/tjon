@@ -297,6 +297,34 @@ Because of the sight I was making, I chose to go with a mixture of shades of bro
 
 <img src="documents/readme/site_features/register-buttons.png">
 
+#### Add Product Page 
+
+* Add Product form shows shop admin all input fields they need to fill in order to add a new product.
+
+<img src="documents/readme/site_features/add-form.png">
+
+* Buttons to either add a new product or to cancel page and go back to the homepage
+
+<img src="documents/readme/site_features/add-buttons.png">
+
+* Upload button to upload picture of product shop admin wants to add
+
+<img src="documents/readme/site_features/add-upload.png">
+
+#### Edit Product Page
+
+* Edit notification telling shop admin that they are currently trying to edit a product
+
+<img src="documents/readme/site_features/toast-edit.png">
+
+* Edit product form shows shop admin all fields they can edit and update
+
+<img src="documents/readme/site_features/edit-form.png">
+
+* Buttons in edit form directing the user either back to homepage or to update product
+
+<img src="documents/readme/site_features/edit-buttons.png">
+
 
 ### Database Models
 

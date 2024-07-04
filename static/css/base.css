@@ -124,6 +124,12 @@ header{
 
 .bundle-offer{
     margin-bottom: 0;
+    background-color: peachpuff !important;
+    height: 72px;
+    align-items: center;
+    letter-spacing: 0.2rem;
+    font-weight: 900 !important;
+    font-size: 80px;
 }
 
 .hero-image {
@@ -171,7 +177,7 @@ header{
     font-weight: 800;
     border: 2px solid rgb(196, 162, 133);
 }
-.home-btn,
+
 .add-to-bag-btn {
     padding: 10px 24px;
     background: rgb(196, 162, 133);
