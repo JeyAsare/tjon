@@ -103,6 +103,220 @@ Because of the sight I was making, I chose to go with a mixture of shades of bro
 - peachpuff
 - whitesmoke
 
+## Features 
+
+### All Pages
+
+#### Header Section (Base)
+
+* TJON logo is a link back to the homepage 
+
+<img src="documents/readme/site_features/logo.png">
+
+* Search bar can allow users to type product name or words within the product description
+
+<img src="documents/readme/site_features/search-bar.png">
+
+* Accounts drop down gives users to log in, log out, see profile (if logged in), and product management (superusers only)
+
+<img src="documents/readme/site_features/account-dropdown.png">
+
+* Shopping basket allows users to be aware of the items they are about to purchase. It lights up to white once a user adds a product to the shopping basket
+
+<img src="documents/readme/site_features/basket.png">
+
+##### Navigation Bar 
+
+* Navigation bar allows users to see all products in one go or see them in their different categories
+
+<img src="documents/readme/site_features/navbar.png">
+<img src="documents/readme/site_features/navbar-dropdown.png">
+
+#### Footer Section (Base)
+
+* Footer contains social media icons which takes the said user to business social media profile
+* Footer also containes the TJON logo and slogan which is a link to take user back to homepage.
+
+<img src="documents/readme/site_features/social.png"> 
+<img src="documents/readme/site_features/footer-link.png"> 
+
+#### Index Page
+
+* Hero Image with a shop now button leading users to all products page
+
+<img src="documents/readme/site_features/hero-image-shop-now-btn.png">
+
+* Site banner letting customers know about any discounts
+
+<img src="documents/readme/site_features/delivery-banner.png">
+
+#### Products Page
+
+* Products displayed clear to user.
+
+<img src="documents/readme/site_features/product-user.png">
+
+* Sort dropdown gives a user different ways in which they can sort products.
+
+<img src="documents/readme/site_features/sort-dropdown.png">
+
+#### Product Detail Page
+
+* Product Detail Page showing customers more indepth view of product they could potentially purchase
+
+<img src="documents/readme/site_features/product-detail.png">
+
+* Size field showing customers the size of the product they are getting
+
+<img src="documents/readme/site_features/size.png">
+
+* Quantity selector allowing customers to choose how much of the product they would like to buy
+
+<img src="documents/readme/site_features/quantity.png">
+
+* Buttons to either take customer back to all products page or to contiune into the shopping bag section
+
+<img src="documents/readme/site_features/detail-buttons.png">
+
+* Success notification letting customers know that they have added said product into the shopping bag
+
+<img src="documents/readme/site_features/toast-success.png">
+
+#### Bag Page
+
+* Bag section showing customer all products that they have put in the basket and necessary price information in regards to products
+
+<img src="documents/readme/site_features/bag-view.png">
+
+* Update and Delete link for users to update their baskets if they decide to change their mind
+
+<img src="documents/readme/site_features/subtotal.png">
+
+* Price update telling users how much they need to spend in order to get free delivery
+
+<img src="documents/readme/site_features/price-warning.png">
+
+* Showing of bag and grand total to notify customers how much they are looking to pay for their products
+
+<img src="documents/readme/site_features/price-total.png">
+
+#### Checkout Page
+
+* Another view of product with price and information for customers before they put their details down to pay for item.
+
+<img src="documents/readme/site_features/product.preview.png">
+
+* Detail form for users to input allowing them to purchase the item.
+
+<img src="documents/readme/site_features/crispy_forms.png">
+
+* Payment input for customers to securely put their card details in allowing them to purchase item/s
+
+<img src="documents/readme/site_features/stripe-payments.png">
+
+* Links telling users to either create a profile or to log in so that their details can be saved for when they next make a purchase
+
+<img src="documents/readme/site_features/checkout-links.png">
+
+* Another price notification telling customers how much will be charged on their card
+
+<img src="documents/readme/site_features/price-warning2.png">
+
+* Checkout buttons either directing customers back to the bag page or to go through with the secure payment
+
+<img src="documents/readme/site_features/checkout-buttons.png">
+
+#### Checkout Success 
+
+* A notification letting user know that their order was successful
+
+<img src="documents/readme/site_features/toast-success.png">
+
+* Checkout success body giving customers information on their order.
+
+<img src="documents/readme/site_features/success-body.png">
+
+* Checkout buttons directing users either to the homepage or to the all products page
+
+<img src="documents/readme/site_features/success-buttons.png">
+
+#### Profile Page 
+
+* Profile notificstion letting customers know that they have updated their profile
+
+<img src="documents/readme/site_features/profile-toast.png">
+
+* Profile form displaying customers default delivery information
+
+<img src="documents/readme/site_features/profile-form.png">
+
+* Order history displayed to show previous activities from user
+
+<img src="documents/readme/site_features/order-history.png">
+
+* A link that will take you to the page of the order that you clicked on
+
+<img src="documents/readme/site_features/profile-link.png">
+
+* Update button that will update and store your default delivery information if you decide to change it
+
+<img src="documents/readme/site_features/profile-button.png">
+
+#### Sign Out
+
+* Option of whether you want to sign out
+* Buttons giving user the option of signing out or going back their profile page
+
+<img src="documents/readme/site_features/sign-out.png">
+
+* Signed out notification to user letting them know they successfully signed out
+
+<img src="documents/readme/site_features/toast-sign-out.png">
+
+#### Login Page
+
+* Log in link directing user to sign up page if they do not have an account
+
+<img src="documents/readme/site_features/login-link.png">
+
+* Log in buttons directing user either to logging in or back to homepage
+
+<img src="documents/readme/site_features/login-buttons.png">
+
+* Forgot password link for users who need to reset their password
+
+<img src="documents/readme/site_features/forgot-password-link.png">
+
+#### Register Page
+
+* Sign up link directing user to log in page if they already have an account
+
+<img src="documents/readme/site_features/register-link.png">
+
+* Register buttons directing user either to signing up or directing back to log in page
+
+<img src="documents/readme/site_features/register-buttons.png">
+
+
+### Database Models
+
+- I have created 5 models for my site that help provide the neccessary functionalities of my site.
+
+- Category Model 
+<img src="documents/readme/db_models/category-model.png">
+
+- Product Model 
+<img src="documents/readme/db_models/product-model.png">
+
+- Order Model 
+<img src="documents/readme/db_models/order-model.png">
+
+- OrderLineItem Model 
+<img src="documents/readme/db_models/orderlineitem-model.png">
+
+- UserProfile Model 
+<img src="documents/readme/db_models/userprofile-model.png">
+
 ## Technologies Used
 
 ### Languages
